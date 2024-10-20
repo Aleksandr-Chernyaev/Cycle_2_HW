@@ -94,13 +94,8 @@ public class Main {
 
         int friday = 5;
 
-        while (friday < 31) {
-            friday++;
-            {
-                if (friday % 7 == 0) {
-                    System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
-                }
-            }
+        for (int day = friday; day <= 31; day += 7) {
+            System.out.println("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
         }
 
         // tasl 8
